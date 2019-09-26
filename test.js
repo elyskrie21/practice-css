@@ -9,6 +9,8 @@ function FirstFactorial(num) {
 }
 
 Number(78909);
+
+console.log('hello');
    
 // keep this function call here 
 // to see how to enter arguments in JavaScript scroll down

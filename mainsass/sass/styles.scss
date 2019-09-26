@@ -1,0 +1,207 @@
+/* imports 
+---------------------*/
+@import 'variables';
+
+// Mixins
+
+@mixin h1-styling {
+    font-family: 'Bangers', cursive;
+    font-size: 3.5rem;  
+    margin-top: 50px; 
+    margin-bottom: 50px;
+}
+
+@mixin name {
+    
+}
+// Gloabl stylyling
+html {
+    box-sizing: border-box;
+
+}
+
+*, *::after, *::after {
+    box-sizing: inherit; 
+}
+
+body {
+    margin: 0;
+    
+}
+
+// Header styling 
+header{
+    /* border: 2px solid red; */
+    height: 937px;
+    background: url('../../images/man-1253004_1920.jpg') no-repeat fixed center ;
+    background-size: cover;
+    margin-bottom: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 15% 550px;
+    font-family: 'Bangers', cursive;
+
+}
+
+.logo {
+    width: 140px;
+    height: 14px;
+    margin-top: 15px;
+    margin-bottom: 0;
+}
+
+// Navigation styling
+.top-nav {
+    /* border: 2px solid red; */
+    position: fixed;
+    top: 0;
+    grid-column-start: 2;
+    grid-row-start: 1;
+    display: flex;
+    flex-direction: wrap;
+    justify-content: space-between;
+    align-items: baseline;   
+    color: white;
+    z-index: 10;
+}
+
+.logos {
+    margin-top: 10px;
+    font-size: 1.8rem;
+}
+
+.top-nav a{ 
+    text-decoration: none;
+    margin: 10px;
+    text-transform: uppercase;
+    background: transparent;
+    font-size: 1.8rem;
+    
+}
+// End of Navigation styling
+
+.header-text{
+    grid-column-start: 2;
+    grid-row-start: 2;
+    align-self: center;
+    text-align: center;
+    font-size: 2rem;
+    color: white; 
+    
+    h1{
+    font-family: 'Bangers', cursive;
+    font-size: 3.5rem;   
+    }
+}
+
+.btn{
+    grid-column-start: 2;
+    grid-row-start: 2;
+    justify-self: center;
+    align-self: flex-end;
+    font-size: 1.4rem;
+    width: 100px;
+    
+
+}
+// about styling
+.about {
+    background-color: $secondary-color;
+    text-align: center;
+    height: 300px;
+    font-size: 1.2rem;
+    clear: both;
+    position: relative;
+}
+
+.about-text {
+    position: absolute; 
+    width: 900px;
+    left: 50%;
+    margin-left: -450px;
+    top: 50%;
+    margin-top: -100px;
+    
+}
+
+.next{
+    text-decoration: none;
+}
+
+// Goal Section
+
+.main-section {
+    position: relative;
+    background-color: $primary-color;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    color: white;
+
+    h1{
+     @include h1-styling;
+    }
+
+}
+
+.goal-content {
+    margin: auto;
+    margin-bottom: 100px;
+    max-width: 50vw;  
+    text-align: left;
+    h2{
+        text-transform: uppercase;
+    }
+}
+
+img{
+    margin-right: 20px;
+    float: left;
+    height: 200px;
+}
+
+.pic-right{
+    img{
+        float: right;
+    }
+}
+
+.vl {
+    display: block;
+    border-left: 2px solid $secondary-color;
+    height: 50px;
+    left: 50%;
+    position: relative;
+    margin-left: -1px;
+    margin-bottom: 50px;
+
+  }
+
+
+// education styling
+.education{
+    @extend .main-section;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: left;
+    position: relative;
+    color: black;
+    background-color: $secondary-color;
+}
+
+.education-heading{
+    text-align: center;
+
+    h1{
+        @include h1-styling();
+    }
+
+}
+
+.education-content {
+    width: 400px;
+}
+

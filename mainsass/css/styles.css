@@ -147,4 +147,39 @@ img {
 .education-content {
   width: 400px; }
 
+.footer {
+  height: fit-content;
+  padding: 10px;
+  background-image: url(../../images/pexels-photo-821754.jpeg);
+  background-position: center;
+  background-repeat: no-repeat; }
+
+.contact {
+  height: 500px;
+  text-align: center; }
+  .contact h1 {
+    font-family: 'Bangers', cursive;
+    font-size: 3.5rem;
+    margin-top: 50px;
+    margin-bottom: 50px; }
+
+.message {
+  display: flex;
+  flex-direction: column; }
+  .message input, .message button {
+    align-self: center;
+    width: 500px;
+    margin: 10px; }
+
+.input {
+  padding: 10px;
+  font-size: 18pt; }
+
+.text {
+  line-height: 50px; }
+
+.logos {
+  text-align: center;
+  font-size: 50px; }
+
 /*# sourceMappingURL=styles.css.map */

@@ -154,15 +154,6 @@ img {
   background-position: center;
   background-repeat: no-repeat; }
 
-.contact {
-  height: 500px;
-  text-align: center; }
-  .contact h1 {
-    font-family: 'Bangers', cursive;
-    font-size: 3.5rem;
-    margin-top: 50px;
-    margin-bottom: 50px; }
-
 .message {
   display: flex;
   flex-direction: column; }
@@ -172,14 +163,24 @@ img {
     margin: 10px; }
 
 .input {
-  padding: 10px;
   font-size: 18pt; }
 
 .text {
-  line-height: 50px; }
+  max-height: 200px;
+  align-self: center; }
+
+.contact {
+  width: 50%;
+  margin: auto;
+  background: white; }
 
 .logos {
+  margin-top: 50px;
   text-align: center;
   font-size: 50px; }
+
+.contact div:first-of-type, .contact button {
+  color: white;
+  background-color: #011627; }
 
 /*# sourceMappingURL=styles.css.map */

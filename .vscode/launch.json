@@ -1,0 +1,28 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - PortScanner",
+            "request": "launch",
+            "mainClass": "PortScanner"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Main",
+            "request": "launch",
+            "mainClass": "Main"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - main",
+            "request": "launch",
+            "mainClass": "main"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - SimpleServer",
+            "request": "launch",
+            "mainClass": "SimpleServer"
+        }
+    ]
+}
